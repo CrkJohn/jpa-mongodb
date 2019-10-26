@@ -23,6 +23,7 @@ public class Task{
     private State state;
     private Label label;
     private Date expirationDate;
+    private int priority;
     private String name;
     private String description;
     private String id;
