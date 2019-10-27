@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
     @Autowired
-    @Qualifier("userServiceMongo")
+    @Qualifier("userService")
     IUserService userService;
 
     @GetMapping

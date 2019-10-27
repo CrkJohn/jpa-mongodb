@@ -19,4 +19,15 @@ public interface ITaskService {
     Task updateTask(Task task);
 
     void saveTasks(Task task);
+
+    void deleteAll();
+
+    List<Task> findByResponsible(String responsible);
+
+    int countTaskByResponsible(String  name);
+
+    List<Task> findByResponsibleAndPriorityIsGreaterThan(String responsible , int value);
+
+    List<Task> findByDescriptionIsGreaterThan(int value);
+
 }

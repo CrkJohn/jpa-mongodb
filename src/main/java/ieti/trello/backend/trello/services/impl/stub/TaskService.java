@@ -53,4 +53,29 @@ public class TaskService implements ITaskService {
     public void saveTasks(Task task) {
         iTaskPersistence.saveTask(task);
     }
+
+    @Override
+    public void deleteAll() {
+
+    }
+
+    @Override
+    public List<Task> findByResponsible(String responsible) {
+        return null;
+    }
+
+    @Override
+    public int countTaskByResponsible(String value) {
+        return 0;
+    }
+
+    @Override
+    public List<Task> findByResponsibleAndPriorityIsGreaterThan(String responsible, int value) {
+        return null;
+    }
+
+    @Override
+    public List<Task> findByDescriptionIsGreaterThan(int value) {
+        return null;
+    }
 }

@@ -27,6 +27,11 @@ public class UserService implements IUserService {
     }
 
     @Override
+    public List<User> getUserByName(String name) {
+        return null;
+    }
+
+    @Override
     public User createUser(User user) {
         return userPersistence.createUser(user);
     }
@@ -39,5 +44,9 @@ public class UserService implements IUserService {
     @Override
     public void removeUser(String userId) {
         userPersistence.removeUser(userId);
+    }
+
+    @Override
+    public void removeAllUsers() {
     }
 }

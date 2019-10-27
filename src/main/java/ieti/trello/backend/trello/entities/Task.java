@@ -22,7 +22,7 @@ public class Task{
     private ObjectId _id;
     private State state;
     private Label label;
-    private Date expirationDate;
+    private String expirationDate;
     private int priority;
     private String name;
     private String description;
@@ -31,5 +31,20 @@ public class Task{
     private List<Comment> comments  = new ArrayList<>();
     private List<User> members = new ArrayList<>();
 
-
+    @Override
+    public String toString() {
+        return "Task{" +
+                "_id=" + _id +
+                ", state=" + state +
+                ", label=" + label +
+                ", expirationDate='" + expirationDate + '\'' +
+                ", priority=" + priority +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", id='" + id + '\'' +
+                ", responsible='" + responsible + '\'' +
+                ", comments=" + comments +
+                ", members=" + members +
+                '}';
+    }
 }

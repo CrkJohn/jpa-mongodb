@@ -25,4 +25,18 @@ public class User{
     private String password;
     private List<Dashboard> dashboards = new ArrayList<>();
     private List<Team> teams = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "_id=" + _id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", userName='" + userName + '\'' +
+                ", initials='" + initials + '\'' +
+                ", password='" + password + '\'' +
+                ", dashboards=" + dashboards +
+                ", teams=" + teams +
+                '}';
+    }
 }

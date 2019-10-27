@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 public class TaskController {
 
     @Autowired
-    @Qualifier("taskServiceMongo")
+    @Qualifier("taskService")
     ITaskService iTaskService;
 
 	@GetMapping

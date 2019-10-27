@@ -12,9 +12,13 @@ public interface IUserService {
 
     User getUserById(String userId);
 
+    List<User> getUserByName(String name);
+
     User createUser(User user);
 
     User updateUser(User user);
 
     void removeUser(String userId);
+
+    void removeAllUsers();
 }

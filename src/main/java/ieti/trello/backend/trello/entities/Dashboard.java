@@ -13,7 +13,6 @@ import java.util.*;
 public class Dashboard{
 
     public String name;
-    public List<User> members;
     public List<Task> tasks;
     public int id;
 }
